@@ -127,7 +127,6 @@ function getNodes() {
                         if (parent_node == undefined && row.ParentID != null)
                             elementsInBadOrder.push(row);
                         else {
-                            console.log(parent_node);
                             $('#tree1').tree(
                                 'appendNode', {
                                 name: row.Name,
@@ -159,7 +158,6 @@ function appendNodesToTree(deserializedJson) {
             if (parent_node == undefined && row.ParentID != null)
                 elementsInBadOrder.push(row);
             else {
-                console.log(parent_node);
                 $('#tree1').tree(
                     'appendNode', {
                     name: row.Name,
