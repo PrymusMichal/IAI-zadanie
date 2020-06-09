@@ -151,7 +151,6 @@ function getNodes() {
 
 function appendNodesToTree(deserializedJson) {
     var elementsInBadOrder = [];
-    console.log(deserializedJson);
     deserializedJson.forEach(
         function (row) {
             var parent_node = $('#tree1').tree('getNodeById', row.ParentID);
